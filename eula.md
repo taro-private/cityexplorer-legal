@@ -59,7 +59,7 @@ This Agreement shall be governed by the laws of Japan. Any disputes arising unde
 ### 9. Contact
 
 For questions regarding this Agreement, please contact:  
-📧 oda.yutaro.business@gmail.com (YOKATA forest words)
+📧 yokata.forest.words@gmail.com
 
 ---
 
@@ -112,7 +112,7 @@ For questions regarding this Agreement, please contact:
 ### 9. お問い合わせ
 
 本契約に関するお問い合わせは、以下までご連絡ください：  
-📧 oda.yutaro.business@gmail.com (YOKATA forest words)
+📧 yokata.forest.words@gmail.com
 
 ---
 
