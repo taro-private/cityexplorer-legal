@@ -6,7 +6,7 @@ permalink: /eula
 
 # CityExplorer End User License Agreement (EULA) / エンドユーザーライセンス契約
 
-**Last updated / 最終更新: 2026-07-17**
+**Last updated / 最終更新: 2026-07-06**
 
 ---
 
