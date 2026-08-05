@@ -6,7 +6,7 @@ permalink: /eula
 
 # CityExplorer End User License Agreement (EULA) / エンドユーザーライセンス契約
 
-**Last updated / 最終更新: 2026-07-21**
+**Last updated / 最終更新: 2026-08-05**
 
 ---
 
@@ -30,7 +30,7 @@ You may NOT:
 
 ### 3. Third-Party API Usage
 
-The Software uses third-party external APIs to provide map, AI, and facility information (Google Maps Platform, YOLP, OpenWeatherMap, Google Gemini, etc.). API keys for core features are managed by the Developer and are included in the Software package. By using the Software, you agree to comply with the terms of service of each applicable third-party service. You are not required to obtain or enter API keys for standard use.
+The Software uses third-party external APIs to provide map, AI, and facility information (Google Maps Platform, YOLP, OpenWeatherMap, Google Gemini, etc.). API keys for core features (Google 3D Tiles, Gemini AI) are managed exclusively on the Developer's server infrastructure and are never embedded in the client package. Certain features are delivered through the Developer's relay service (Cloudflare Workers). The Software also integrates Valve Corporation's Steamworks SDK to provide platform authentication, achievements, leaderboards, and cloud save functionality (Steam Cloud). By using the Software, you agree to comply with the terms of service of each applicable third-party service. You are not required to obtain or enter API keys for standard use.
 
 ### 4. AI-Generated Content
 
@@ -44,7 +44,10 @@ THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SOFTWARE, INCLUDING BUT NOT LIMITED TO:
 
-- Disruption or unavailability of external API services
+- Disruption or unavailability of the Developer's relay service (Cloudflare Workers) or external API services
+- Feature unavailability caused by relay service failures, network disruptions, API specification changes, or service terminations beyond the Developer's control
+- Disruption or unavailability of Steam platform services (including Steam authentication, Steam Cloud, and other Steamworks features) caused by Valve Corporation or network conditions beyond the Developer's control
+- Loss, corruption, or synchronization failure of save data stored via Steam Cloud
 - Inaccuracies in AI-generated content
 - Data loss or corruption of local save files
 
@@ -60,6 +63,10 @@ This Agreement shall be governed by the laws of Japan. Any disputes arising unde
 
 For questions regarding this Agreement, please contact:  
 📧 yokata.forest.words@gmail.com
+
+### 10. In-App Purchase Pricing
+
+Prices for in-app purchases (e.g. quota packs) are set by the Developer and are subject to change in the future due to changes in external API pricing structures, growth in the user base, or other operational circumstances. The Developer will provide advance notice of any price changes. Continued use of the Software after such notice constitutes acceptance of the updated pricing.
 
 ---
 
@@ -83,7 +90,7 @@ For questions regarding this Agreement, please contact:
 
 ### 3. 外部APIの利用
 
-本ソフトウェアは地図・AI・施設情報の提供に、Google Maps Platform・YOLP・OpenWeatherMap・Google Gemini 等のサードパーティ外部APIを使用します。主要機能のAPIキーは開発者が管理し、ソフトウェアパッケージに含まれています。通常の利用に際してAPIキーの取得・入力は不要です。本ソフトウェアを使用することにより、各サービスの利用規約を遵守することに同意したものとみなします。
+本ソフトウェアは地図・AI・施設情報の提供に、Google Maps Platform・YOLP・OpenWeatherMap・Google Gemini 等のサードパーティ外部APIを使用します。主要機能（Google 3D Tiles・Gemini AI）のAPIキーは、開発者が運営するクラウド中継サービス（Cloudflare Workers）のサーバーサイドにのみ保管され、クライアントパッケージには含まれません。一部の機能はこの中継サービスを経由して提供されます。また、本ソフトウェアは Valve Corporation の Steamworks SDK を統合しており、プラットフォーム認証・実績・リーダーボード・Steam Cloud セーブ機能を提供します。通常の利用に際してAPIキーの取得・入力は不要です。本ソフトウェアを使用することにより、各サービスの利用規約を遵守することに同意したものとみなします。
 
 ### 4. AI生成コンテンツ
 
@@ -97,7 +104,10 @@ For questions regarding this Agreement, please contact:
 
 適用法が許容する最大限の範囲において、開発者は以下を含む損害について一切責任を負いません：
 
-- 外部APIサービスの停止・障害による動作不全
+- 開発者が運営するクラウド中継サービス（Cloudflare Workers）または外部APIサービスの停止・障害による動作不全
+- 中継サービス障害・ネットワーク障害・API仕様変更・サービス終了その他開発者の管理範囲外の外部要因により機能が利用不能となったことによる損害
+- Valve Corporation またはネットワーク環境に起因する Steam プラットフォームサービス（Steam認証・Steam Cloud・その他 Steamworks 機能を含む）の停止・障害
+- Steam Cloud へのセーブデータの損失・破損または同期失敗
 - AI生成コンテンツの不正確さに起因する損害
 - ローカルセーブデータの損失・破損
 
@@ -113,6 +123,10 @@ For questions regarding this Agreement, please contact:
 
 本契約に関するお問い合わせは、以下までご連絡ください：  
 📧 yokata.forest.words@gmail.com
+
+### 10. アプリ内購入の料金変更
+
+アプリ内購入（クォータ追加パック等）の設定料金は開発者が決定し、外部APIの料金体系の変更・利用者数の増大その他の運営上の事情により、将来変更される場合があります。料金を変更する際は事前に通知します。変更通知後に本ソフトウェアを継続して使用した場合、変更後の料金に同意したものとみなします。
 
 ---
 
