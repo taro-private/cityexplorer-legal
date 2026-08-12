@@ -59,14 +59,14 @@ This Agreement is effective until terminated. Your rights under this Agreement w
 
 This Agreement shall be governed by the laws of Japan. Any disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the courts in Japan.
 
-### 9. Contact
+### 9. In-App Purchase Pricing
+
+Prices for in-app purchases (e.g. quota packs) are set by the Developer and are subject to change in the future due to changes in external API pricing structures, growth in the user base, or other operational circumstances. The Developer will provide advance notice of any price changes. Continued use of the Software after such notice constitutes acceptance of the updated pricing.
+
+### 10. Contact
 
 For questions regarding this Agreement, please contact:  
 📧 yokata.forest.words@gmail.com
-
-### 10. In-App Purchase Pricing
-
-Prices for in-app purchases (e.g. quota packs) are set by the Developer and are subject to change in the future due to changes in external API pricing structures, growth in the user base, or other operational circumstances. The Developer will provide advance notice of any price changes. Continued use of the Software after such notice constitutes acceptance of the updated pricing.
 
 ---
 
@@ -119,14 +119,14 @@ Prices for in-app purchases (e.g. quota packs) are set by the Developer and are 
 
 本契約は日本法に準拠します。本契約に関する紛争は、日本の裁判所を専属管轄裁判所とします。
 
-### 9. お問い合わせ
+### 9. アプリ内購入の料金変更
+
+アプリ内購入（クォータ追加パック等）の設定料金は開発者が決定し、外部APIの料金体系の変更・利用者数の増大その他の運営上の事情により、将来変更される場合があります。料金を変更する際は事前に通知します。変更通知後に本ソフトウェアを継続して使用した場合、変更後の料金に同意したものとみなします。
+
+### 10. お問い合わせ
 
 本契約に関するお問い合わせは、以下までご連絡ください：  
 📧 yokata.forest.words@gmail.com
-
-### 10. アプリ内購入の料金変更
-
-アプリ内購入（クォータ追加パック等）の設定料金は開発者が決定し、外部APIの料金体系の変更・利用者数の増大その他の運営上の事情により、将来変更される場合があります。料金を変更する際は事前に通知します。変更通知後に本ソフトウェアを継続して使用した場合、変更後の料金に同意したものとみなします。
 
 ---
 

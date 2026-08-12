@@ -12,13 +12,13 @@ permalink: /privacy
 
 ## English
 
-### Data We Do NOT Collect
+### Data Collection
 
 CityExplorer does not collect, store, or transmit any personal information (such as name, email address, or payment information) from players.
 
 However, to manage per-user API quota on the relay server, a **platform authentication token** issued by Steam is transmitted to the Developer's relay server. The relay server uses this token to verify your Steam identity and associates your **Steam ID** with your quota balance in server-side storage. No other personal data is collected.
 
-### Data Stored Locally on Your PC
+### Data Storage
 
 | Data | Storage Location | Transmitted Externally? |
 |------|-----------------|------------------------|
@@ -61,7 +61,7 @@ For questions regarding this Privacy Policy, please contact:
 
 ## 日本語
 
-### 収集しないデータ
+### データの収集について
 
 CityExplorer は、プレイヤーの氏名・メールアドレス・決済情報などの個人情報を収集・保管・送信しません。
 
