@@ -6,7 +6,7 @@ permalink: /privacy
 
 # CityExplorer Privacy Policy / プライバシーポリシー
 
-**Last updated / 最終更新: 2026-08-05**
+**Last updated / 最終更新: 2026-08-12**
 
 ---
 
@@ -14,22 +14,25 @@ permalink: /privacy
 
 ### Data We Do NOT Collect
 
-CityExplorer does not collect, store, or transmit any personal information, account information, or payment information from players.
+CityExplorer does not collect, store, or transmit any personal information (such as name, email address, or payment information) from players.
+
+However, to manage per-user API quota on the relay server, a **platform authentication token** issued by Steam is transmitted to the Developer's relay server. The relay server uses this token to verify your Steam identity and associates your **Steam ID** with your quota balance in server-side storage. No other personal data is collected.
 
 ### Data Stored Locally on Your PC
 
 | Data | Storage Location | Transmitted Externally? |
 |------|-----------------|------------------------|
-| Game settings, favorites, custom markers, scores | Steam Cloud (ISteamRemoteStorage, `userdata.dat`, AES-256 encrypted) | No |
-| Developer-managed API keys | Stored securely on the Developer's server infrastructure (core features) or locally in encrypted form (optional features) | No |
-| Error logs | `Saved/ErrorLogs/` | No |
-| Auto screenshots | `Saved/Screenshots/` | No |
+| Game settings, favorites, custom markers, scores | Steam Cloud (encrypted) | Steam Cloud only |
+| API quota balance (Google 3D Tiles, Gemini AI) | Developer's relay server, keyed by Steam ID | Yes — see below |
+| Developer-managed API keys | Developer's server infrastructure | No |
+| Application logs | Local only | No |
+| Auto screenshots | Local only | No |
 
-All game data is stored exclusively on your local PC and is never sent to external servers.
+Game settings and progress are synced to Steam Cloud (Valve's servers). API quota is managed on the Developer's relay server, identified by Steam ID. No other data leaves your device.
 
 ### External Service Connections
 
-During gameplay, the app connects to the following external services to provide map, weather, and facility information. Data transmitted is limited to **geographic coordinates (latitude/longitude)** and **search keywords**.
+During gameplay, the app connects to the following external services to provide map, weather, and facility information. Data transmitted is limited to **in-game location coordinates (latitude/longitude)** and **search keywords**.
 
 | Service | Purpose | Privacy Policy |
 |---------|---------|----------------|
@@ -43,7 +46,7 @@ During gameplay, the app connects to the following external services to provide 
 | Open-Elevation | Elevation data | [open-elevation.com](https://api.open-elevation.com/) |
 | Cloudflare Workers | Relay server infrastructure (for Google 3D Tiles and Gemini API) | [cloudflare.com](https://www.cloudflare.com/privacypolicy/) |
 
-API keys used for core service authentication (Google 3D Tiles, Gemini AI) are managed exclusively on the Developer's server infrastructure and are never embedded in the client package or shared with users. Requests for these services are routed through the Developer's relay service. No personally identifiable information is transmitted through this relay; only an anonymous session token (for identity verification) and geographic coordinates are used.
+API keys for all external services are managed exclusively on the Developer's server infrastructure and are never embedded in the client package or shared with users. Requests requiring API authentication are routed through the Developer's relay service. Data transmitted to the relay server is limited to a **platform authentication token** (for identity verification) and **in-game location coordinates**. Your Steam ID is stored server-side solely to track your API quota balance and enforce usage limits.
 
 ### AI-Generated Content
 
@@ -60,23 +63,26 @@ For questions regarding this Privacy Policy, please contact:
 
 ### 収集しないデータ
 
-CityExplorer は、プレイヤーの個人情報・アカウント情報・決済情報を一切収集・保管・送信しません。
+CityExplorer は、プレイヤーの氏名・メールアドレス・決済情報などの個人情報を収集・保管・送信しません。
 
-### お使いの PC にローカル保存されるデータ
+ただし、中継サーバーでの API クォータ管理のために、**Steam 発行の認証トークン**を開発者の中継サーバーに送信します。中継サーバーはこのトークンで本人確認を行い、**Steam ID** をサーバー側ストレージのクォータ残数と紐づけて管理します。それ以外の個人情報は収集しません。
+
+### お使いの PC およびサーバーに保存されるデータ
 
 | データ | 保存場所 | 外部送信 |
 |--------|----------|----------|
-| ゲーム設定・お気に入り・自作マーカー・スコア | Steam Cloud（ISteamRemoteStorage、`userdata.dat`、AES-256暗号化） | なし |
-| 開発者管理 API キー | 主要機能のキーは開発者のサーバーインフラ上に安全に保管、オプション機能のキーはローカルに暗号化保存 | なし |
-| エラーログ | `Saved/ErrorLogs/` | なし |
-| 自動スクリーンショット | `Saved/Screenshots/` | なし |
+| ゲーム設定・お気に入り・自作マーカー・スコア | Steam Cloud（暗号化） | Steam Cloud のみ |
+| API クォータ残数（Google 3D Tiles・Gemini AI） | 開発者の中継サーバー（Steam ID をキーに保存） | あり（下記参照） |
+| 開発者管理 API キー | 開発者のサーバーインフラ上にのみ保管 | なし |
+| アプリケーションログ | ローカルのみ | なし |
+| 自動スクリーンショット | ローカルのみ | なし |
 
-全てのゲームデータはお使いの PC にのみ保存され、外部サーバーには送信されません。
+ゲーム設定・進行データは Steam Cloud（Valve のサーバー）に同期されます。API クォータは Steam ID をキーとして開発者の中継サーバーで管理されます。それ以外のデータはお使いのデバイスの外部に送信されません。
 
 ### 外部サービスへの通信
 
 ゲームプレイ中、地図・天候・施設情報の提供のために以下の外部サービスに接続します。  
-送信されるデータは**現在地の緯度・経度**と**検索キーワード**に限定されます。
+送信されるデータは**ゲーム内の探索地点の緯度・経度**と**検索キーワード**に限定されます。
 
 | サービス | 用途 | プライバシーポリシー |
 |---------|------|------------------|
@@ -90,7 +96,7 @@ CityExplorer は、プレイヤーの個人情報・アカウント情報・決�
 | Open-Elevation | 標高データ | [open-elevation.com](https://api.open-elevation.com/) |
 | Cloudflare Workers | リレーサーバーインフラ（Google 3D Tiles・Gemini API用） | [cloudflare.com](https://www.cloudflare.com/privacypolicy/) |
 
-サービス認証に使用する API キーは開発者が管理し、ユーザーから取得・共有することはありません。
+外部サービスの認証に使用する API キーはすべて開発者のサーバーインフラ上で管理され、クライアントパッケージへの埋め込みやユーザーへの共有は行いません。API 認証を要するリクエストは開発者の中継サービスを経由します。中継サーバーへの送信データは、**Steam 発行の認証トークン**（本人確認用）と**ゲーム内の探索地点の緯度・経度**に限定されます。Steam ID はクォータ残数の管理と利用制限の適用のみを目的としてサーバー側に保存されます。
 
 ### AI生成コンテンツ
 
@@ -104,3 +110,4 @@ CityExplorer は、プレイヤーの個人情報・アカウント情報・決�
 ---
 
 *© 2026 YOKATA forest words. CityExplorer.*
+

@@ -6,7 +6,7 @@ permalink: /eula
 
 # CityExplorer End User License Agreement (EULA) / エンドユーザーライセンス契約
 
-**Last updated / 最終更新: 2026-08-05**
+**Last updated / 最終更新: 2026-08-12**
 
 ---
 
@@ -30,7 +30,7 @@ You may NOT:
 
 ### 3. Third-Party API Usage
 
-The Software uses third-party external APIs to provide map, AI, and facility information (Google Maps Platform, YOLP, OpenWeatherMap, Google Gemini, etc.). API keys for core features (Google 3D Tiles, Gemini AI) are managed exclusively on the Developer's server infrastructure and are never embedded in the client package. Certain features are delivered through the Developer's relay service (Cloudflare Workers). The Software also integrates Valve Corporation's Steamworks SDK to provide platform authentication, achievements, leaderboards, and cloud save functionality (Steam Cloud). By using the Software, you agree to comply with the terms of service of each applicable third-party service. You are not required to obtain or enter API keys for standard use.
+The Software uses third-party external APIs to provide map, AI, and facility information. API keys for all services are managed exclusively on the Developer's server infrastructure and are never embedded in the client package. Certain features are delivered through the Developer's relay service. The Software also integrates Valve Corporation's Steamworks SDK to provide platform authentication, achievements, leaderboards, and cloud save functionality. By using the Software, you agree to comply with the terms of service of each applicable third-party service. You are not required to obtain or enter API keys for standard use.
 
 ### 4. AI-Generated Content
 
@@ -44,7 +44,7 @@ THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SOFTWARE, INCLUDING BUT NOT LIMITED TO:
 
-- Disruption or unavailability of the Developer's relay service (Cloudflare Workers) or external API services
+- Disruption or unavailability of the Developer's relay service or external API services
 - Feature unavailability caused by relay service failures, network disruptions, API specification changes, or service terminations beyond the Developer's control
 - Disruption or unavailability of Steam platform services (including Steam authentication, Steam Cloud, and other Steamworks features) caused by Valve Corporation or network conditions beyond the Developer's control
 - Loss, corruption, or synchronization failure of save data stored via Steam Cloud
@@ -90,7 +90,7 @@ Prices for in-app purchases (e.g. quota packs) are set by the Developer and are 
 
 ### 3. 外部APIの利用
 
-本ソフトウェアは地図・AI・施設情報の提供に、Google Maps Platform・YOLP・OpenWeatherMap・Google Gemini 等のサードパーティ外部APIを使用します。主要機能（Google 3D Tiles・Gemini AI）のAPIキーは、開発者が運営するクラウド中継サービス（Cloudflare Workers）のサーバーサイドにのみ保管され、クライアントパッケージには含まれません。一部の機能はこの中継サービスを経由して提供されます。また、本ソフトウェアは Valve Corporation の Steamworks SDK を統合しており、プラットフォーム認証・実績・リーダーボード・Steam Cloud セーブ機能を提供します。通常の利用に際してAPIキーの取得・入力は不要です。本ソフトウェアを使用することにより、各サービスの利用規約を遵守することに同意したものとみなします。
+本ソフトウェアは地図・AI・施設情報の提供に、サードパーティ外部APIを使用します。全てのサービスのAPIキーは開発者のサーバーインフラ上で管理され、クライアントパッケージには含まれません。一部の機能は開発者の中継サービスを経由して提供されます。また、本ソフトウェアは Valve Corporation の Steamworks SDK を統合しており、プラットフォーム認証・実績・リーダーボード・クラウドセーブ機能を提供します。通常の利用に際してAPIキーの取得・入力は不要です。本ソフトウェアを使用することにより、各サービスの利用規約を遵守することに同意したものとみなします。
 
 ### 4. AI生成コンテンツ
 
@@ -104,7 +104,7 @@ Prices for in-app purchases (e.g. quota packs) are set by the Developer and are 
 
 適用法が許容する最大限の範囲において、開発者は以下を含む損害について一切責任を負いません：
 
-- 開発者が運営するクラウド中継サービス（Cloudflare Workers）または外部APIサービスの停止・障害による動作不全
+- 開発者が運営する中継サービスまたは外部APIサービスの停止・障害による動作不全
 - 中継サービス障害・ネットワーク障害・API仕様変更・サービス終了その他開発者の管理範囲外の外部要因により機能が利用不能となったことによる損害
 - Valve Corporation またはネットワーク環境に起因する Steam プラットフォームサービス（Steam認証・Steam Cloud・その他 Steamworks 機能を含む）の停止・障害
 - Steam Cloud へのセーブデータの損失・破損または同期失敗
@@ -131,3 +131,4 @@ Prices for in-app purchases (e.g. quota packs) are set by the Developer and are 
 ---
 
 *© 2026 YOKATA forest words. CityExplorer.*
+
